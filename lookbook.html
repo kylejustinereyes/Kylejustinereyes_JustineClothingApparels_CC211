@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justine Apparels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-atelier py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand-serif" href="../index.html">Justine Apparels</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav"
+          aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="primaryNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link "  href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="catalog.html">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="lookbook.html">
+                Lookbook &amp; Fit <span class="badge rounded-pill text-bg-secondary js-wishlist-count">0</span>
+              </a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-atelier btn-sm px-3 "  href="bag.html">
+                Shopping Bag (<span class="js-cart-count">0</span>)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent" class="container my-4 my-md-5">
+    <nav aria-label="Breadcrumb">
+      <ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Lookbook &amp; Fit Guide</li>
+      </ol>
+    </nav>
+
+    <!-- Saved Lookbook Section -->
+    <section class="mb-5" aria-labelledby="savedLookbookHeading">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <div>
+          <h1 id="savedLookbookHeading" class="display-6 fw-bold mb-1">Saved Lookbook Wishlist</h1>
+          <p class="text-muted mb-0">Garments bookmarked with the heart icon are persisted automatically in your browser.</p>
+        </div>
+      </div>
+      <div class="row g-4" id="lookbookGrid"></div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- Interactive Size Chart with Unit Toggle -->
+    <section class="mb-5" aria-labelledby="sizeGuideHeading">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3 gap-2">
+        <div>
+          <h2 id="sizeGuideHeading" class="h3 mb-1">Garment Body Measurement Chart</h2>
+          <p class="text-muted small mb-0">Active measurement unit: <strong id="currentUnitLabel">Centimeters (cm)</strong></p>
+        </div>
+        <button type="button" id="toggleUnitBtn" class="btn btn-atelier-outline btn-sm">Switch to Inches (in)</button>
+      </div>
+
+      <div class="table-responsive bg-white border rounded shadow-sm">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Alpha Size</th>
+              <th scope="col">Chest</th>
+              <th scope="col">Natural Waist</th>
+              <th scope="col">Hip</th>
+              <th scope="col">Sleeve Length</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">XS</th>
+              <td class="js-measure" data-cm="86">86 cm</td>
+              <td class="js-measure" data-cm="70">70 cm</td>
+              <td class="js-measure" data-cm="90">90 cm</td>
+              <td class="js-measure" data-cm="60">60 cm</td>
+            </tr>
+            <tr>
+              <th scope="row">S</th>
+              <td class="js-measure" data-cm="92">92 cm</td>
+              <td class="js-measure" data-cm="76">76 cm</td>
+              <td class="js-measure" data-cm="96">96 cm</td>
+              <td class="js-measure" data-cm="62">62 cm</td>
+            </tr>
+            <tr>
+              <th scope="row">M</th>
+              <td class="js-measure" data-cm="98">98 cm</td>
+              <td class="js-measure" data-cm="82">82 cm</td>
+              <td class="js-measure" data-cm="102">102 cm</td>
+              <td class="js-measure" data-cm="64">64 cm</td>
+            </tr>
+            <tr>
+              <th scope="row">L</th>
+              <td class="js-measure" data-cm="104">104 cm</td>
+              <td class="js-measure" data-cm="88">88 cm</td>
+              <td class="js-measure" data-cm="108">108 cm</td>
+              <td class="js-measure" data-cm="66">66 cm</td>
+            </tr>
+            <tr>
+              <th scope="row">XL</th>
+              <td class="js-measure" data-cm="112">112 cm</td>
+              <td class="js-measure" data-cm="96">96 cm</td>
+              <td class="js-measure" data-cm="115">115 cm</td>
+              <td class="js-measure" data-cm="68">68 cm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Styling & Fit Inquiry Form + Fabric Care Accordion -->
+    <section class="row g-4" aria-labelledby="inquiryHeading">
+      <div class="col-lg-6">
+        <div class="summary-box h-100">
+          <h2 id="inquiryHeading" class="h4 mb-2">Request a Styling &amp; Fit Consultation</h2>
+          <p class="small text-muted mb-3">Unsure between two sizes or pairing fabrics? Send a note to our studio stylists (Frontend Demo Form).</p>
+          <form id="stylingInquiryForm" novalidate>
+            <div class="mb-3">
+              <label for="inquiryName" class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="inquiryName" placeholder="e.g., Kyle Justine Reyes" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="inquiryEmail" class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="inquiryEmail" placeholder="reyesjustine@gmail.com" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="inquiryTopic" class="form-label fw-semibold">Consultation Topic <span class="text-danger">*</span></label>
+              <select id="inquiryTopic" class="form-select" required>
+                <option value="">Choose a topic...</option>
+                <option value="Sizing & Fit Advice">Sizing &amp; Fit Advice</option>
+                <option value="Capsule Wardrobe Pairing">Capsule Wardrobe Pairing</option>
+                <option value="Fabric & Garment Care">Fabric &amp; Garment Care</option>
+              </select>
+              <div class="invalid-feedback">Please select an inquiry topic.</div>
+            </div>
+            <div class="mb-3">
+              <label for="inquiryNotes" class="form-label fw-semibold">Questions or Measurements <span class="text-danger">*</span></label>
+              <textarea id="inquiryNotes" class="form-control" rows="3" placeholder="Share your height, preferred fit, or garments you are comparing..." required></textarea>
+              <div class="invalid-feedback">Please provide at least 15 characters.</div>
+            </div>
+            <button type="submit" class="btn btn-atelier">Submit Styling Request</button>
+            <div id="inquiryStatusAlert" class="d-none" role="alert"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="summary-box h-100">
+          <h2 class="h4 mb-3">Natural Fiber Care Guidelines</h2>
+          <div class="accordion" id="fabricCareAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#careLinen" aria-expanded="true" aria-controls="careLinen">
+                  European Flax Linen &amp; Organic Cotton
+                </button>
+              </h3>
+              <div id="careLinen" class="accordion-collapse collapse show" data-bs-parent="#fabricCareAccordion">
+                <div class="accordion-body small">
+                  Machine wash cold on a gentle cycle with mild liquid detergent. Reshape while damp and line dry in the shade to preserve fiber tensile strength and prevent shrinkage.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#careWool" aria-expanded="false" aria-controls="careWool">
+                  Extra-Fine Merino &amp; Grade-A Cashmere
+                </button>
+              </h3>
+              <div id="careWool" class="accordion-collapse collapse" data-bs-parent="#fabricCareAccordion">
+                <div class="accordion-body small">
+                  Hand wash cool with pH-neutral wool wash, press water gently in a towel without wringing, and dry flat on a mesh rack. Fold rather than hang to maintain shoulder structure.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#careDenim" aria-expanded="false" aria-controls="careDenim">
+                  Okayama Raw Selvedge Denim
+                </button>
+              </h3>
+              <div id="careDenim" class="accordion-collapse collapse" data-bs-parent="#fabricCareAccordion">
+                <div class="accordion-body small">
+                  Turn inside out before soaking in cold water. Hang dry away from direct sunlight to retain deep indigo saturation and promote custom crease fading.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-atelier py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h2 class="h4 brand-serif text-white mb-2">Justine Apparels</h2>
+          <p class="small mb-2">Thoughtfully designed everyday garments crafted from traceable natural fibers. Frontend clothing catalog web application built with HTML5, CSS3, JavaScript, and Bootstrap 5.</p>
+          <p class="small text-secondary mb-0">Frontend Demonstration &mdash; All product listings, pricing, and checkout actions run locally in browser storage.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="h6 text-uppercase text-white letter-spacing-1">Navigation</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="../index.html">Home &amp; Featured</a></li>
+            <li class="mb-1"><a href="catalog.html">Full Apparel Catalog</a></li>
+            <li class="mb-1"><a href="lookbook.html">Lookbook &amp; Size Guide</a></li>
+            <li><a href="bag.html">Shopping Bag &amp; Checkout</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h3 class="h6 text-uppercase text-white">Categories</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="catalog.html?category=Tops">Tops &amp; Linen Shirts</a></li>
+            <li class="mb-1"><a href="catalog.html?category=Bottoms">Denim &amp; Tailored Trousers</a></li>
+            <li class="mb-1"><a href="catalog.html?category=Outerwear">Outerwear &amp; Coats</a></li>
+            <li><a href="catalog.html?category=Knitwear">Merino &amp; Cashmere Knitwear</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="d-flex flex-column flex-sm-row justify-content-between small text-secondary">
+        <span>&copy;  2026  KY L E - J U S T I N E - R E Y E S.</span>
+        <span>Accessible &bull; Responsive &bull; Zero-Backend Demo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

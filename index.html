@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justine Apparels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-atelier py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand-serif" href="index.html">Justine Apparels</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav"
+          aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="primaryNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="pages/catalog.html">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="pages/lookbook.html">
+                Lookbook &amp; Fit <span class="badge rounded-pill text-bg-secondary js-wishlist-count">0</span>
+              </a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-atelier btn-sm px-3 "  href="pages/bag.html">
+                Shopping Bag (<span class="js-cart-count">0</span>)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent" class="container my-4 my-md-5">
+    <!-- Hero Banner -->
+    <section class="hero-section p-4 p-md-5 mb-5" aria-labelledby="heroHeading">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="hero-badge mb-3">Autumn / Winter Capsule 2026</span>
+          <h1 id="heroHeading" class="display-5 fw-bold mb-3">Architectural Silhouettes in Natural Fibers</h1>
+          <p class="lead text-light opacity-75 mb-4">
+            Explore curated wardrobe staples designed for longevity. Filter by fabric, fit, and size, save outfits to your personal lookbook, and manage your shopping bag seamlessly.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="pages/catalog.html" class="btn btn-light btn-lg fw-semibold px-4">Browse Full Catalog</a>
+            <a href="pages/lookbook.html" class="btn btn-outline-light btn-lg px-4">Size Guide &amp; Lookbook</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/images/hero-banner.svg" alt="Atelier Véla Autumn Winter Capsule Banner" class="img-fluid rounded border border-secondary">
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Quick Links -->
+    <section class="mb-5" aria-labelledby="categoryHeading">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <div>
+          <h2 id="categoryHeading" class="h3 mb-1">Shop by Department</h2>
+          <p class="text-muted small mb-0">Jump directly into filtered catalog collections</p>
+        </div>
+        <a href="pages/catalog.html" class="text-decoration-none fw-semibold text-dark">View All 9 Pieces &rarr;</a>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <a href="pages/catalog.html?category=Tops" class="card text-decoration-none text-dark h-100 border">
+            <div class="card-body">
+              <span class="small text-uppercase text-muted">01</span>
+              <h3 class="h5 mt-1 mb-1">Tops &amp; Shirts</h3>
+              <p class="small text-muted mb-0">European flax linen &amp; heavyweight Supima cotton.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="pages/catalog.html?category=Bottoms" class="card text-decoration-none text-dark h-100 border">
+            <div class="card-body">
+              <span class="small text-uppercase text-muted">02</span>
+              <h3 class="h5 mt-1 mb-1">Denim &amp; Trousers</h3>
+              <p class="small text-muted mb-0">Okayama selvedge denim &amp; pleated virgin wool.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="pages/catalog.html?category=Outerwear" class="card text-decoration-none text-dark h-100 border">
+            <div class="card-body">
+              <span class="small text-uppercase text-muted">03</span>
+              <h3 class="h5 mt-1 mb-1">Outerwear</h3>
+              <p class="small text-muted mb-0">Weather-resistant gabardine &amp; duck canvas coats.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="pages/catalog.html?category=Knitwear" class="card text-decoration-none text-dark h-100 border">
+            <div class="card-body">
+              <span class="small text-uppercase text-muted">04</span>
+              <h3 class="h5 mt-1 mb-1">Knitwear</h3>
+              <p class="small text-muted mb-0">Extra-fine merino &amp; Grade-A Mongolian cashmere.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Garments -->
+    <section aria-labelledby="featuredHeading">
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-end mb-4">
+        <div>
+          <h2 id="featuredHeading" class="h3 mb-1">Featured Season Staples</h2>
+          <p class="text-muted small mb-0">Select your size to add directly to your bag or save to your lookbook.</p>
+        </div>
+        <span class="badge text-bg-light border mt-2 mt-sm-0">Promo Code: <strong>VELA15</strong> for 15% Off</span>
+      </div>
+      <div class="row g-4" id="featuredCatalogGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer-atelier py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h2 class="h4 brand-serif text-white mb-2">Justine Apparels</h2>
+          <p class="small mb-2">Thoughtfully designed everyday garments crafted from traceable natural fibers. Frontend clothing catalog web application built with HTML5, CSS3, JavaScript, and Bootstrap 5.</p>
+          <p class="small text-secondary mb-0">Frontend Demonstration &mdash; All product listings, pricing, and checkout actions run locally in browser storage.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="h6 text-uppercase text-white letter-spacing-1">Navigation</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="index.html">Home &amp; Featured</a></li>
+            <li class="mb-1"><a href="pages/catalog.html">Full Apparel Catalog</a></li>
+            <li class="mb-1"><a href="pages/lookbook.html">Lookbook &amp; Size Guide</a></li>
+            <li><a href="pages/bag.html">Shopping Bag &amp; Checkout</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h3 class="h6 text-uppercase text-white">Categories</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="pages/catalog.html?category=Tops">Tops &amp; Linen Shirts</a></li>
+            <li class="mb-1"><a href="pages/catalog.html?category=Bottoms">Denim &amp; Tailored Trousers</a></li>
+            <li class="mb-1"><a href="pages/catalog.html?category=Outerwear">Outerwear &amp; Coats</a></li>
+            <li><a href="pages/catalog.html?category=Knitwear">Merino &amp; Cashmere Knitwear</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="d-flex flex-column flex-sm-row justify-content-between small text-secondary">
+        <span>&copy;  2026  KY L E - J U S T I N E - R E Y E S.</span>
+        <span>Accessible &bull; Responsive &bull; Zero-Backend Demo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

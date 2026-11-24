@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A201D"/>
+      <stop offset="100%" stop-color="#353E39"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#g)"/>
+  <circle cx="950" cy="300" r="210" fill="none" stroke="#E6DACE" stroke-opacity="0.18" stroke-width="2"/>
+  <circle cx="950" cy="300" r="150" fill="none" stroke="#C89D7C" stroke-opacity="0.35" stroke-width="1.5"/>
+  <rect x="875" y="160" width="150" height="280" rx="8" fill="none" stroke="#E6DACE" stroke-opacity="0.4" stroke-width="2"/>
+  <line x1="950" y1="160" x2="950" y2="440" stroke="#E6DACE" stroke-opacity="0.25" stroke-width="1.5"/>
+  <text x="80" y="230" font-family="Georgia, serif" font-size="18" letter-spacing="5" fill="#C89D7C">WEAR COLLECTION</text>
+  <text x="80" y="295" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#E6DACE">KYLE JUSTINE  CLOTHING APPARELS</text>
+  <text x="80" y="345" font-family="Arial, sans-serif" font-size="20" fill="#E6DACE" fill-opacity="0.8">Timeless Silhouettes • Natural Fibers</text>
+</svg>
